@@ -40,7 +40,11 @@ spring:
         serialization.indent_output: true
     datasource:
         type: com.zaxxer.hikari.HikariDataSource
+<<<<<<< HEAD
         url: jdbc:mysql://localhost:3306/jiuzhangquanzhan?useUnicode=true&characterEncoding=utf8&useSSL=false
+=======
+        url: jdbc:mysql://localhost:3306/jiuzhangquanzhanke?useUnicode=true&characterEncoding=utf8&useSSL=false&allowPublicKeyRetrieval=true
+>>>>>>> RegistrationApp
         username: root
         password: Rh871224
         hikari:
@@ -49,6 +53,7 @@ spring:
                 prepStmtCacheSize: 250
                 prepStmtCacheSqlLimit: 2048
                 useServerPrepStmts: true
+
     jpa:
         database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
         database: MYSQL
